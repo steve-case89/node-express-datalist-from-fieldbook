@@ -30,13 +30,13 @@ var request = require('request');
 router.get('/', function(req, res, next) {
 
     var options = {
-        url: 'https://api.fieldbook.com/v1/56e2e6c95d27c403000d75ff/sample_sheet1',
+        url: 'https://api.fieldbook.com/v1/56e3720b54053e03000cd333/harvest_clients',
         headers: {
             'Accept': 'application/json'
         },
         auth: {
-            username: 'key-1',
-            password: 'cT0nK9wGqGCnVXMa0YYT'
+            username: 'key-8',
+            password: '9IvRB7MTA8pdx92FG_O6'
         }
     };
 
