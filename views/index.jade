@@ -1,7 +1,25 @@
 extends layout
 
 block content
-  h1= 'DataList of FieldBoo.com sheet'
-  each record in data
-    each every_data in record
-      p= every_data
+    h1= 'DataList of FieldBoo.com sheet'
+
+    div
+        table(class = 'pure-table')
+            thead
+                tr
+                    th Record No
+                    th Record Url
+                    th No
+                    th Field1
+                    th Field2
+                    th Field3
+            tbody
+            each record in data
+                //- var count = 0;
+                tr
+                each every_data in record
+                    td
+                        p= every_data
+                        //if count > 1
+                        //    p= every_data
+                        //- count++;
