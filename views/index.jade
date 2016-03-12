@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= 'DataList of FieldBoo.com sheet'
+  each record in data
+    each every_data in record
+      p= every_data
